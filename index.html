@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="validation.html" return validation.fun(); >
+        Name:<input type="text" id="n" placeholder="enter yourName"><br><br>
+        Email:<input type="text" id="E" placeholder="enter your Email"><br><br>
+        Password:<input type="text" id="p" placeholder="enter your Passsword"><br><br>
+        Phone Number:<input type="text" id="ph" placeholder="enter your PhoneNumber"><br><br>
+        <input type="Submit" id="" placeholder="">
+    </form>
+</body>
+<script>
+        let n = document.getElementById("name").innerHTML;
+        let p = document.getElementById("pword").innerHTML;
+        let E = document.getElementById("Email").innerHTML;
+        v=validation.fun();{
+        let ph = document.getElementById("pnum").innerHTML;
+        if (n == " " || n.length.value < 6) {
+            alert("length of the name must be 6 letters");
+            return false
+            
+        }
+        if (p == " " || p.length.value < 6) {
+            alert("length of the password must be 6 values");
+            return false
+            
+        }
+        if (E = " ") {
+            alert("email must contain standard pattern that is name@domin.com");
+            return false
+            
+           
+        }
+        if (p == " " || p.length.value > 10) {
+            alert("phone number should contain 10 digits");
+            return false
+        }
+}
+</script>
+
+</html>
